@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CleanEase | Home Cleaning Services</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800">
+
+  <header class="fixed top-0 left-0 w-full bg-[#1d3557] text-white shadow-md z-50">
+    <nav class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold">CleanEase</h1>
+      <ul class="hidden md:flex gap-8 text-sm font-medium">
+        <li><a href="#home" class="hover:text-[#a8dadc] transition">Home</a></li>
+        <li><a href="#services" class="hover:text-[#a8dadc] transition">Services</a></li>
+        <li><a href="#reviews" class="hover:text-[#a8dadc] transition">Reviews</a></li>
+        <li><a href="#footer" class="hover:text-[#a8dadc] transition">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="home" class="pt-20"></div>
+
+  <section class="h-screen bg-cover bg-center flex flex-col justify-center items-center text-center text-white px-6"
+    style="background-image: url('https://images.unsplash.com/photo-1581579185912-1b67f9c5853d?auto=format&fit=crop&w=1600&q=80');">
+    <div data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">Your Home, Sparkling Clean</h2>
+      <p class="max-w-xl mx-auto mb-8 text-lg">Professional and affordable cleaning services that make your life easier.</p>
+      <a href="#services" class="bg-[#457b9d] hover:bg-[#1d3557] text-white px-6 py-3 rounded-full font-semibold transition">Explore Services</a>
+    </div>
+  </section>
+
+  <section id="services" class="bg-[#f1faee] py-20 px-6 md:px-16">
+    <div data-aos="fade-up" class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-[#1d3557] mb-4">Our Services</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">From homes to offices, we deliver spotless results every time. Choose the service that fits your needs.</p>
+    </div>
+
+    <div class="grid gap-10 md:grid-cols-3 max-w-6xl mx-auto">
+      <div class="bg-white rounded-xl shadow-lg hover:-translate-y-2 transition transform duration-300" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://images.unsplash.com/photo-1581579185912-1b67f9c5853d?auto=format&fit=crop&w=800&q=80" alt="House Cleaning" class="rounded-t-xl h-56 w-full object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-semibold mb-3 text-[#1d3557]">House Cleaning</h3>
+          <p class="text-gray-600">Thorough cleaning for your living spaces using eco-friendly products.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg hover:-translate-y-2 transition transform duration-300" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://images.unsplash.com/photo-1590420489214-7c1cd60d8b1a?auto=format&fit=crop&w=800&q=80" alt="Office Cleaning" class="rounded-t-xl h-56 w-full object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-semibold mb-3 text-[#1d3557]">Office Cleaning</h3>
+          <p class="text-gray-600">Keep your workspace spotless and hygienic with our professional team.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg hover:-translate-y-2 transition transform duration-300" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://images.unsplash.com/photo-1600116742038-8b5a208f6cc3?auto=format&fit=crop&w=800&q=80" alt="Deep Cleaning" class="rounded-t-xl h-56 w-full object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-semibold mb-3 text-[#1d3557]">Deep Cleaning</h3>
+          <p class="text-gray-600">Perfect for moving in/out or a seasonal refresh of your home or office.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="py-20 px-6 md:px-16 bg-white">
+    <div data-aos="fade-up" class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-[#1d3557] mb-4">What Our Clients Say</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">We take pride in every space we clean. Here’s what our happy clients say about us.</p>
+    </div>
+
+    <div class="max-w-5xl mx-auto grid gap-8 md:grid-cols-2">
+      <div class="bg-[#f1faee] p-8 rounded-xl shadow-md" data-aos="fade-right">
+        <p class="italic text-gray-700">"CleanEase did an amazing job! My apartment has never been this spotless. Highly recommend them!"</p>
+        <p class="mt-4 font-semibold text-[#1d3557] text-right">— Maria L.</p>
+      </div>
+
+      <div class="bg-[#f1faee] p-8 rounded-xl shadow-md" data-aos="fade-left" data-aos-delay="150">
+        <p class="italic text-gray-700">"Reliable, friendly, and affordable. I book them every month and they never disappoint!"</p>
+        <p class="mt-4 font-semibold text-[#1d3557] text-right">— Joshua T.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="bg-[#1d3557] text-white text-center py-8 px-6">
+    <p>&copy; 2025 CleanEase Cleaning Services | Designed for portfolio use</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 900,
+      offset: 120,
+      once: true,
+    });
+  </script>
+</body>
+</html>
