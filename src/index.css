@@ -1,3 +1,126 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Josefin Sans', sans-serif !important;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.service-card-hover {
+  transition: all 0.4s ease;
+}
+.service-card-hover:hover {
+  box-shadow: 0 20px 40px rgba(29, 53, 87, 0.25);
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.85); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.animate-popIn {
+  animation: popIn 0.35s ease-out forwards;
+}
+
+@keyframes ping-slow {
+  0%, 100% { transform: scale(0.8); opacity: 0.6; }
+  50% { transform: scale(1.2); opacity: 0.3; }
+}
+
+@keyframes ping-slower {
+  0%, 100% { transform: scale(0.7); opacity: 0.5; }
+  50% { transform: scale(1.1); opacity: 0.2; }
+}
+
+.animate-ping-slow {
+  animation: ping-slow 4s ease-in-out infinite;
+}
+
+.animate-ping-slower {
+  animation: ping-slower 6s ease-in-out infinite;
+}
+
+.booknow-bg {
+  background: linear-gradient(135deg, #eaf4fc, #f5f9ff, #e2ecff);
+  background-size: 400% 400%;
+  animation: bgFloat 18s ease infinite;
+}
+
+@keyframes bgFloat {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.card-animate {
+  animation: fadeUp 0.7s ease-out, floatCard 5s ease-in-out infinite;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatCard {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+input, select {
+  transition: 0.25s ease;
+}
+
+input:focus, select:focus {
+  border-color: #457b9d !important;
+  box-shadow: 0 0 8px rgba(69, 123, 157, 0.4);
+  transform: scale(1.01);
+}
+
+.btn-animated {
+  transition: 0.25s ease;
+  box-shadow: 0 6px 14px rgba(29, 53, 87, 0.2);
+}
+
+.btn-animated:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(29, 53, 87, 0.35);
+}
+
+.submit-glow:hover {
+  box-shadow: 0 0 20px rgba(69, 123, 157, 0.6);
+}
+
+.service-block {
+  transition: 0.25s ease;
+}
+
+.service-block:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+.summary-box {
+  animation: fadePop 0.6s ease-out;
+}
+
+@keyframes fadePop {
+  0% { opacity: 0; transform: scale(0.96); }
+  100% { opacity: 1; transform: scale(1); }
+}

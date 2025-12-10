@@ -1,13 +1,30 @@
 import React from "react";
-import Layout from "./components/Layout";
-import Services from "./pages/Services";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function App() {
+// Components
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+// Pages
+import Services from "./pages/Services";
+import BookNow from "./pages/BookNow";
+import BookingConfirmation from "./pages/BookingConfirmation";
+
+const App = () => {
   return (
-    <Layout>
-      <Services />
-    </Layout>
+    <Router>
+      <Header />
+
+      <Routes>
+        <Route path="/services" element={<Services />} />
+        <Route path="/book-now" element={<BookNow />} /> 
+        <Route path="/BookNow" element={<BookNow />} /> 
+        <Route path="/booking-confirmation" element={<BookingConfirmation />} />
+      </Routes>
+
+      <Footer />
+    </Router>
   );
-}
+};
 
 export default App;
