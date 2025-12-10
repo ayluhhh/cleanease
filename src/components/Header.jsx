@@ -6,10 +6,11 @@ const Header = () => {
     <header className="bg-[#1d3557] text-white px-6 py-4 shadow-md">
       <div className="max-w-7xl mx-auto px-2 md:px-6 flex items-center justify-between">
 
-
+        {/* LOGO + BRAND */}
         <Link to="/" className="flex items-center space-x-1 whitespace-nowrap flex-grow">
           <img 
-            src="/Logo_CE.png" 
+            src="/logo.png" 
+
             alt="CleanEase Logo" 
             className="w-10 h-10 object-contain"
           />
